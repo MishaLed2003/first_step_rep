@@ -29,7 +29,22 @@ if __name__ == '__main__' :
     )
 
 
+import turtle
 
+# Создаем объект черепашки
+my_turtle = turtle.Turtle()
+
+# Задаем цвет и толщину линии (необязательно)
+my_turtle.color("blue")
+my_turtle.pensize(3)
+
+# Рисуем квадрат
+for _ in range(4):
+    my_turtle.forward(100)  # Длина стороны квадрата
+    my_turtle.left(90)       # Поворот на 90 градусов влево
+
+# Завершаем рисование и закрываем окно по клику
+turtle.done()
 
 
 
